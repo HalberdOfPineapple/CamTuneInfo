@@ -1,2 +1,7 @@
 # CamTuneInfo
-Abstract of CamTune project.
+
+Database Management Systems (DBMSs) are critical for modern data-driven applications. Their performance heavily depends on appropriately setting values of their numerous configuration knobs but the default settings of them are usually suboptimal. Manually tuning these knob values is challenging due to the vast configuration space, intricate knob interdependencies, and workload-specific optimal settings. Bayesian Optimization (BO) has emerged as a powerful tool for automatic DBMS configuration tuning but struggles with high-dimensional configuration spaces due to the curse of dimensionality.
+
+We introduce MCTS-Copilot, a novel BO-based approach to enhance the efficiency and interpretability towards high-dimensional DBMS configuration tuning by integrating local modeling and search space partitioning techniques. It leverages ideas from Monte Carlo Tree Search (MCTS) for search space partitioning, biasing the local sampling strategy towards configurations from more promising regions. Additionally, we developed CamTune, an automatic DBMS configuration tuning system with good extensibility, maintainability and robustness against experiment faults.
+
+Our evaluations demonstrate that MCTS-Copilot offers superior tuning efficiency and practicality considering its tuning time cost and safety against failures. Furthermore, the resulting trust regions provide valuable insights into the underlying tuning process. This work provides an efficient, practical and interpretable solution to the challenges of high-dimensional DBMS configuration tuning.
